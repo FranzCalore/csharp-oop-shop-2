@@ -9,13 +9,13 @@ namespace CS_Shop_2
 {
     public class Sacchetto_di_frutta:Prodotto
     {
-        private int numeroFrutti;
+        private uint numeroFrutti;
         private string tipoFrutto;
         private double pesoSacchetto;
         private double pesoFrutto;
 
 
-        public Sacchetto_di_frutta(string name, string description, double prezzo, double IVA, int numeroFrutti, double pesoSacchetto, string tipoFrutto):base(name,description,prezzo,IVA)
+        public Sacchetto_di_frutta(string name, string description, double prezzo, double IVA, uint numeroFrutti, double pesoSacchetto, string tipoFrutto):base(name,description,prezzo,IVA)
         {
             this.numeroFrutti = numeroFrutti;
             this.tipoFrutto = tipoFrutto;
@@ -23,7 +23,7 @@ namespace CS_Shop_2
             this.pesoFrutto = PesoFrutto();
         }
 
-        public int GetNumeroFrutti()
+        public uint GetNumeroFrutti()
         {
             return this.numeroFrutti;
         }
@@ -39,7 +39,7 @@ namespace CS_Shop_2
         }
 
         
-        public void AggiungiFrutta(int numeroFrutti)
+        public void AggiungiFrutta(uint numeroFrutti)
         {
             double prezzoSingoloFrutto = this.GetPrezzo() / this.numeroFrutti;
             this.numeroFrutti = this.numeroFrutti + numeroFrutti;
