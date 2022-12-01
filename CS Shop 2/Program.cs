@@ -3,13 +3,13 @@
 using CS_Shop_2;
 
 List<Prodotto> scaffaliNegozio = new List<Prodotto>() {
-    new Prodotto("Pokémon Scarlatto", "Il nuovo gioco dei Pokémon", 60, 22),
     new Prodotto("Bottiglia di Latte", "Una bottiglia di latte", 1.6, 4),
     };
 
 Caramella goleador = new Caramella("Goleador", "Una buona caramella", 0.10, 22, "frutta", 30);
 
-scaffaliNegozio[1].SetPrezzo(-12);
+Videogioco Pokemon = new Videogioco("Pokémon Scarlatto", "L'ultimo gioco dei Pokemon", 60.00, 22, "GameFreak");
+
 
 foreach ( Prodotto articolo in scaffaliNegozio)
 {
@@ -23,3 +23,7 @@ sacchettoArance.StampaProdotto();
 sacchettoArance.AggiungiFrutta(4);
 
 sacchettoArance.StampaProdotto();
+
+Pokemon.StampaProdotto();
+Pokemon.AggiungiGuidaStrategica();
+Pokemon.StampaProdotto();
