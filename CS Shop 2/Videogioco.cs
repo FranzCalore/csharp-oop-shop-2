@@ -28,10 +28,18 @@ namespace CS_Shop_2
         {
             return this.soloDigitale;
         }
-        public void AggiungiGuidaStrategica()
+        public void GuidaStrategicaSìNo()
         {
-            this.guidaStrategica = true;
-            this.SetPrezzo(this.GetPrezzo() + 30);
+            if (guidaStrategica)
+            {
+                this.guidaStrategica = false;
+                this.SetPrezzo(this.GetPrezzo() - 30);
+            }
+            else
+            {
+                this.guidaStrategica = true;
+                this.SetPrezzo(this.GetPrezzo() + 30);
+            }
         }
 
         public override void StampaProdotto()
