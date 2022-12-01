@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpShop
+namespace CS_Shop_2
 {
     public class Prodotto
     {
@@ -140,7 +140,7 @@ namespace CSharpShop
             return codiceStringa + this.name;
         }
 
-        public void StampaProdotto()
+        public virtual void StampaProdotto()
         {
             Console.WriteLine("------ " + this.name + " -----");
             Console.WriteLine();
