@@ -112,7 +112,7 @@ namespace CS_Shop_2
         {
 
             Random generatoreRandom = new Random();
-            int numeroCodice = generatoreRandom.Next(1000000);
+            int numeroCodice = generatoreRandom.Next(100000000);
             return numeroCodice;
         }
 
